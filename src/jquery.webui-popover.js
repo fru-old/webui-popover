@@ -87,7 +87,6 @@
 				},
 				hide:function(event){
 					if (event){
-						event.preventDefault();
 						event.stopPropagation();
 					}
 					if (this.xhr){
@@ -102,7 +101,6 @@
 				},
 				toggle:function(e){
 					if (e) {
-						e.preventDefault();
 						e.stopPropagation();
 					}
 					this[this.getTarget().hasClass('in') ? 'hide' : 'show']();
